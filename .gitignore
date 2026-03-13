@@ -1,0 +1,55 @@
+# =============================================================================
+# PUBLIC REPO .gitignore — tapered-model-comparison
+# =============================================================================
+# This repo is PUBLIC. The items below are either private, generated, or
+# environment-specific and must never appear in the public repository.
+# The manuscript lives in its own private git repo rooted at manuscript/.
+# =============================================================================
+
+
+# --- Private content (manuscript + theory docs) ---
+manuscript/
+docs/internal/
+docs/archived/
+docs/deferred/
+docs/temp/
+
+
+# --- Processed data: keep the DB, exclude nothing else currently ---
+# (galaxy_dynamics.db is 388 KB and enables reproducibility without re-fitting)
+
+
+# --- Python virtual environment ---
+.venv/
+venv/
+env/
+
+# --- Python bytecode and caches ---
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Jupyter notebook checkpoints ---
+.ipynb_checkpoints/
+
+# --- OS artifacts ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Editor / IDE ---
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# --- Logs ---
+*.log
+
+# --- Misc ---
+*.egg-info/
+dist/
+build/
