@@ -1,0 +1,5 @@
+model,n_total,n_converged,n_failed,n_unphysical,n_high_chi2r,unphysical_criterion
+NFW,175,175,0,0,0,c ≤ 0 or V200 ≤ 0
+MOND (fixed),175,175,0,0,18,N/A
+MOND (free),175,175,0,0,0,a₀ ≤ 0
+Rational Taper,175,175,0,2,0,ω ≤ 0 or Rₜ ≤ 0
